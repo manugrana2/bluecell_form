@@ -1,0 +1,15 @@
+bluecell_form.ajax_submit:
+  path: '/bluecell-form/ajax-submit'
+  defaults:
+    _controller: '\Drupal\bluecell_form\Controller\BluecellFormController::ajaxSubmit'
+    _title: 'Ajax Form Submit'
+  requirements:
+    _permission: 'access content'
+
+bluecell_form.admin:
+  path: '/admin/content/bluecell-form-submissions'
+  defaults:
+    _title: 'Formulario Bluecell: Envíos'
+    _controller: '\Drupal\bluecell_form\Controller\BluecellFormAdminController::overview'
+  requirements:
+    _permission: 'administer site configuration'

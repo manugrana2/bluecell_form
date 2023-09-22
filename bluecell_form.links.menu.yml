@@ -1,0 +1,6 @@
+bluecell_form.admin:
+  title: 'Formulario Bluecell: Envíos'
+  route_name: bluecell_form.admin
+  description: 'Ver las respuestas enviadas a través del formulario Bluecell.'
+  parent: system.admin_content
+  weight: 100

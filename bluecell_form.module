@@ -1,0 +1,13 @@
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implementa hook_node_view().
+ */
+function bluecell_form_node_view(array &$build, NodeInterface $node, $display, $view_mode) {
+  // Verifica si estamos en la visualización completa de un nodo
+  if ($view_mode == 'full') {
+    $form = \Drupal::formBuilder()->getForm('Drupal\bluecell_form\Form\BluecellForm');
+    $build['bluecell_form'] = $form;
+  }
+}
