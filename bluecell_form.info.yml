@@ -3,5 +3,3 @@ type: module
 description: 'Módulo para añadir un formulario de contacto en posts.'
 core_version_requirement: ^10
 package: Custom
-dependencies:
-  - drupal:ajax
